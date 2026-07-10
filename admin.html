@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Admin Dashboard | By Ridhima</title>
+<title>By Ridhima Admin</title>
 
 <style>
 
@@ -14,105 +16,271 @@ body{
     background:#fff7fb;
 }
 
+
+/* Top bar */
+
 header{
     background:#ff5ca8;
     color:white;
+    padding:30px;
     text-align:center;
-    padding:25px;
 }
 
-h1{
+
+header h1{
     margin:0;
+    font-size:40px;
 }
 
-.container{
-    max-width:1000px;
-    margin:40px auto;
-    padding:20px;
+
+/* Dashboard layout */
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+
 }
+
 
 .card{
+
     background:white;
-    border-radius:20px;
-    padding:25px;
-    margin-bottom:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
 }
+
 
 .card h2{
+
     color:#ff5ca8;
+
 }
 
+
+.card p{
+
+    color:#666;
+    font-size:18px;
+
+}
+
+
+/* Buttons */
+
+button{
+
+    background:#ff5ca8;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#ff2d8f;
+
+}
+
+
+/* Bracelet editor */
+
+.editor{
+
+    margin:40px;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+
+}
+
+
 input{
+
     width:100%;
     padding:12px;
     margin:10px 0;
     border-radius:10px;
-    border:1px solid #ccc;
-    font-size:16px;
+    border:1px solid #ddd;
     box-sizing:border-box;
+
 }
 
-button{
-    background:#ff5ca8;
-    color:white;
-    border:none;
-    padding:12px 24px;
-    border-radius:30px;
-    font-size:18px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#ff2d8f;
-}
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<h1>By Ridhima Admin Dashboard</h1>
+<h1>
+🌸 By Ridhima Admin Dashboard
+</h1>
+
+<p>
+Welcome back! Manage your business here.
+</p>
 
 </header>
 
-<div class="container">
+
+
+<div class="dashboard">
+
 
 <div class="card">
 
-<h2>Add / Edit Bracelet</h2>
+<h2>🛍️ Bracelets</h2>
 
-<label>Bracelet Name</label>
-<input type="text" placeholder="Pink Hope Bracelet">
+<p>
+Add, edit, remove, and manage bracelet products.
+</p>
 
-<label>Price</label>
-<input type="text" placeholder="$12.00">
+<button>
+Manage Bracelets
+</button>
 
-<label>Image</label>
+</div>
+
+
+
+<div class="card">
+
+<h2>📦 Orders</h2>
+
+<p>
+View customer purchases and shipping status.
+</p>
+
+<button>
+View Orders
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>💬 Messages</h2>
+
+<p>
+Read customer questions and replies.
+</p>
+
+<button>
+Open Messages
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>📊 Sales</h2>
+
+<p>
+Track orders and revenue.
+</p>
+
+<button>
+View Sales
+</button>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>⚙️ Website</h2>
+
+<p>
+Change homepage text and pictures.
+</p>
+
+<button>
+Edit Website
+</button>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="editor">
+
+
+<h2 style="color:#ff5ca8;">
+🩷 Bracelet Quick Editor
+</h2>
+
+
+<label>
+Bracelet Name
+</label>
+
+<input placeholder="Example: Pink Hope Bracelet">
+
+
+
+<label>
+Price
+</label>
+
+<input placeholder="$12.00">
+
+
+
+<label>
+Change Picture
+</label>
+
 <input type="file">
 
-<br><br>
 
-<button>Save Bracelet</button>
+
+<button>
+Save Changes
+</button>
+
+
+<button>
+Remove Picture
+</button>
+
+
+<button>
+Delete Bracelet
+</button>
+
 
 </div>
 
-<div class="card">
 
-<h2>Website Statistics</h2>
-
-<p>Orders: Coming Soon</p>
-
-<p>Revenue: Coming Soon</p>
-
-<p>Messages: Coming Soon</p>
-
-</div>
-
-</div>
 
 </body>
+
 </html>
